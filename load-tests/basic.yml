@@ -13,6 +13,15 @@ config:
       arrivalRate: 10
       rampTo: 30np
       name: Spike phase
+  # Engines and File locations for Playwright tests
+  engines:
+    playwright:
+        launchOptions:
+          headless: false
+        #contextOptions:
+    #här pekar vi på Playwright test kod filer 
+  #processor:
+    
   # Load & configure a couple of useful plugins
   # https://docs.art/reference/extensions
   plugins:
