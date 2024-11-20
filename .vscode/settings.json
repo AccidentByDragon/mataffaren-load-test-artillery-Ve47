@@ -1,7 +1,8 @@
 {
   "yaml.schemas": {
     "https://www.artillery.io/schema.json": [
-      "file:///Users/thomasfrank/Desktop/endpoint-testning-mataffaren/load-tests/basic.yml"
+      "file:///Users/thomasfrank/Desktop/endpoint-testning-mataffaren/load-tests/basic.yml",
+      "file:///c%3A/Users/Karl1/Documents/UniProjekt/mataffaren-load-test-artillery-Ve47/load-tests/basic.yml"
     ]
   }
 }
