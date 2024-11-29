@@ -21,7 +21,7 @@ config:
         #scripts: "./playwright-tests/test.cjs"
         #contextOptions:
     #här pekar vi på Playwright test kod filer 
-  processor: ".././playwright-tests/test.cjs"
+  processor: ".././e2e/test-1.spec.cjs"
     
   # Load & configure a couple of useful plugins
   # https://docs.art/reference/extensions
@@ -38,7 +38,7 @@ config:
 scenarios:
   - name: "Checking images on some categories"
     engine: playwright
-    testFunction: "imgCheck"
+    testFunction: "curiousUser"
     #flow:
       #- get:
           #url: "/kategori/frukt-och-gront"

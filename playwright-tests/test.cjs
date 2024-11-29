@@ -42,3 +42,17 @@ async function imgCheck(page) { //funktionens namn som hänvisas i flowFunction 
   // Stäng browsern när testet är klart
   //await browser.close();
 }
+
+/*
+
+.: ANVÄNDARES RÖRELSEMÖNSTER? :.
+
+	1. Nyfiken förstagångs-användare - klickar runt för att se vad som finns
+
+	2. "Vet vad jag är ute efter"-användare - klickar in direkt på en kategori och specifik vara utefter specifikt sorteringsval
+
+	3. "Kompareraren"-användare - klickar runt på snarlika varor och velar mellan två eller flera varor och försöker göra en jämförelse (jämförelsepris?)
+
+	4. "den snåle"-användaren - klickar runt och försöker hitta de billigaste priserna på varor i kategorier - sorteringsval efter billigast
+
+*/
