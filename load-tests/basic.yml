@@ -13,37 +13,23 @@ config:
       arrivalRate: 1
       rampTo: 1
       name: Spike phase
-  # Engines and File locations for Playwright tests
+
   engines:
     playwright:
-        launchOptions:
-          headless: false
-        #scripts: "./playwright-tests/test.cjs"
-        #contextOptions:
-    #här pekar vi på Playwright test kod filer 
-  processor: ".././e2e/test-1.spec.cjs"
-    
-  # Load & configure a couple of useful plugins
-  # https://docs.art/reference/extensions
-  plugins:
-    ensure: {}
-    apdex: {}
-    metrics-by-endpoint: {}
-  apdex:
-    threshold: 100
-  ensure:
-    thresholds:
-      - http.response_time.p99: 100
-      - http.response_time.p95: 75
+      launchOptions:
+        headless: false
+  processor: ".././e2e/test-1.spec.cjs"  # Peka på din testfil
+
 scenarios:
-  - name: "Checking images on some categories"
+  - name: "Curious User Scenario"
     engine: playwright
-    testFunction: "curiousUser"
-    #flow:
-      #- get:
-          #url: "/kategori/frukt-och-gront"
-      #- get:
-          #url: "/kategori/blommor-och-tradgard"
-      #- get:
-          #url: "/kategori/apotek"
-       # count: 2
+    testFunction: "curiousUser"  # Peka på den asynkrona funktionen
+  - name: "Knower User Scenario"
+    engine: playwright
+    testFunction: "knowerUser"  # Peka på den andra asynkrona funktionen
+  - name: "Comparer User Scenario"
+    engine: playwright
+    testFunction: "comparerUser"  # Peka på en tredje användartest
+  - name: "Greedy User Scenario"
+    engine: playwright
+    testFunction: "greedyUser"  # Peka på den fjärde användartest
