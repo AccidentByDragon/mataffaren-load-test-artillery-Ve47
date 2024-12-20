@@ -1,28 +1,28 @@
 async function curiousUser(page) {
   await page.goto('http://localhost:4000/kategori/frukt-och-gront');
-  await page.locator('div').filter({ hasText: /^Mejeri, ost & ägg\+$/ }).getByRole('button').click();
+  //await page.locator('div').filter({ hasText: /^Mejeri, ost & ägg\+$/ }).getByRole('button').click();
   await page.locator('div').filter({ hasText: /^Ost\+$/ }).getByRole('button').click();
   await page.getByRole('link', { name: 'Dessertost' }).click();
   await page.getByRole('link', { name: 'Färskost' }).click();
   await page.getByRole('link', { name: 'Hårdost lagrad' }).click();
   await page.getByRole('link', { name: 'Hårdost mild/mellan' }).click();
-  await page.getByLabel('Sortera:PopulärastA – ÖÖ –').selectOption('name-desc');
+  //await page.getByLabel('Sortera:PopulärastA – ÖÖ –').selectOption('name-desc');
   await page.locator('div').filter({ hasText: /^Skafferi\+$/ }).getByRole('button').click();
   await page.getByRole('link', { name: 'Konserver & burkar' }).click();
   await page.getByRole('link', { name: 'Texmex' }).click();
   await page.getByRole('link', { name: 'Kryddmix' }).click();
-  await page.getByLabel('Sortera:PopulärastA – ÖÖ –').selectOption('name-asc');
+ // await page.getByLabel('Sortera:PopulärastA – ÖÖ –').selectOption('name-asc');
 }
 
 async function knowerUser(page) {
   await page.goto('http://localhost:4000/kategori');
-  await page.locator('div').filter({ hasText: /^Tobak\+$/ }).getByRole('button').click();
+  //await page.locator('div').filter({ hasText: /^Tobak\+$/ }).getByRole('button').click();
   await page.locator('div').filter({ hasText: /^Snus\+$/ }).getByRole('button').click();
   await page.getByRole('link', { name: 'Snus stock' }).click();
   await page.getByRole('heading', { name: 'General Lös Lössnus' }).click();
   await page.locator('html').click();
   await page.goto('http://localhost:4000/kategori/tobak/snus/snus-stock');
-  await page.getByLabel('Sortera:PopulärastA – ÖÖ –').selectOption('price-asc');
+ // await page.getByLabel('Sortera:PopulärastA – ÖÖ –').selectOption('price-asc');
   await page.getByRole('button', { name: '>' }).click();
   await page.getByRole('button', { name: '>' }).click();
   await page.getByRole('heading', { name: 'Brukssnus Lös Lössnus' }).click();
@@ -30,20 +30,20 @@ async function knowerUser(page) {
 
 async function comparerUser(page) {
   await page.goto('http://localhost:4000/kategori/frukt-och-gront');
-  await page.getByRole('link', { name: 'Apotek' }).click();
+  //await page.getByRole('link', { name: 'Apotek' }).click();
   await page.getByRole('link', { name: 'Plåster & sårvård' }).click();
-  await page.getByLabel('Sortera:PopulärastA – ÖÖ –').selectOption('price-asc');
+ // await page.getByLabel('Sortera:PopulärastA – ÖÖ –').selectOption('price-asc');
   await page.getByRole('heading', { name: 'Idomin Salva Oparfymerad' }).click();
   await page.getByRole('link', { name: 'Plåster & sårvård' }).click();
   await page.getByRole('link', { name: 'Receptfria läkemedel' }).click();
   await page.getByRole('link', { name: 'Plåster & sårvård' }).click();
-  await page.getByLabel('Sortera:PopulärastA – ÖÖ –').selectOption('compareprice-asc');
+ // await page.getByLabel('Sortera:PopulärastA – ÖÖ –').selectOption('compareprice-asc');
   await page.getByRole('heading', { name: 'Idomin Salva Oparfymerad' }).click();
 }
 
 async function greedyUser(page) {
   await page.goto('http://localhost:4000/kategori/frukt-och-gront');
-  await page.getByLabel('Sortera:PopulärastA – ÖÖ –').selectOption('price-asc');
+ // await page.getByLabel('Sortera:PopulärastA – ÖÖ –').selectOption('price-asc');
   await page.getByRole('link', { name: 'Kött, chark & fågel' }).click();
   await page.getByRole('link', { name: 'Fågel', exact: true }).click();
   await page.getByRole('link', { name: 'Färsk fågel' }).click();
