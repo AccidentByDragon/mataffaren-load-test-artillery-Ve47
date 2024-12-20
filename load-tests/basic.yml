@@ -24,12 +24,12 @@ scenarios:
   - name: "Curious User Scenario"
     engine: playwright
     testFunction: "curiousUser"  # Peka på den asynkrona funktionen
-  # - name: "Knower User Scenario"
-  #   engine: playwright
-  #   testFunction: "knowerUser"  # Peka på den andra asynkrona funktionen
-  # - name: "Comparer User Scenario"
-  #   engine: playwright
-  #   testFunction: "comparerUser"  # Peka på en tredje användartest
-  # - name: "Greedy User Scenario"
-  #   engine: playwright
-  #   testFunction: "greedyUser"  # Peka på den fjärde användartest
+  - name: "Knower User Scenario"
+    engine: playwright
+    testFunction: "knowerUser"  # Peka på den andra asynkrona funktionen
+  - name: "Comparer User Scenario"
+    engine: playwright
+    testFunction: "comparerUser"  # Peka på en tredje användartest
+  - name: "Greedy User Scenario"
+    engine: playwright
+    testFunction: "greedyUser"  # Peka på den fjärde användartest

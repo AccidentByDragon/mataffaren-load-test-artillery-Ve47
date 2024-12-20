@@ -41,12 +41,14 @@ jobs:
       #uses: microsoft/playwright-github-action@v1
     - name: Install dependencies
       run: npm install
+    - name: Build project
+      run: npm run build
       # start up the backend server
       # (the needs to run if we should be able 
       #  perform endpoint-testing)
       # run with nohup (no hangup) in order to 
       # not block the terminal so we can still run test
-    - run: nohup npm start &
+    - run: nohup node backend/index.js &
       # run whatever is specified in package.json
       # for the script test
     - run: npm run load-test-basic
