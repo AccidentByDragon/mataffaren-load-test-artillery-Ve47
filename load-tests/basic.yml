@@ -17,7 +17,7 @@ config:
   engines:
     playwright:
       launchOptions:
-        headless: false
+        headless: true
   processor: ".././e2e/test-1.spec.cjs"  # Peka på din testfil
 
 scenarios:
