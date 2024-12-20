@@ -11,7 +11,7 @@ on:
 # jobs to run
 jobs:
   run-backend:
-   runs-on: ubuntu-latest
+    runs-on: ubuntu-latest
 
     strategy:
       # only testing on Node 18 now but could have done
