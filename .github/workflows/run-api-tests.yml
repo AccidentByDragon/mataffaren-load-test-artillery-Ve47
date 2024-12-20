@@ -46,7 +46,7 @@ jobs:
       #  perform endpoint-testing)
       # run with nohup (no hangup) in order to 
       # not block the terminal so we can still run test
-    - run: nohup node backend/index.js &
+    - run: nohup npm start &
       # run whatever is specified in package.json
       # for the script test
     - run: npm run load-test-basic
