@@ -38,7 +38,7 @@ jobs:
     - name: Install Playwright
       run: npx playwright install-deps
     - name: Install dependencies
-    - run: npm install
+      run: npm install
       # start up the backend server
       # (the needs to run if we should be able 
       #  perform endpoint-testing)
