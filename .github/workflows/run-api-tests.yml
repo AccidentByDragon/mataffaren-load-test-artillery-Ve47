@@ -35,10 +35,10 @@ jobs:
       # npm ci ≈ read-only from package.json version
       # of npm install -> installs all npm modules
       # mentioned in package.json, preferably during CI
-    - name: Install Playwright
-      run: npx playwright install-deps
-    - name: Install playwright browsers
-      uses: microsoft/playwright-github-action@v1
+    #- name: Install Playwright
+      #run: npx playwright install-deps
+    #- name: Install playwright browsers
+      #uses: microsoft/playwright-github-action@v1
     - name: Install dependencies
       run: npm install
       # start up the backend server
