@@ -44,4 +44,4 @@ jobs:
     - run: nohup node backend/index.js &
       # run whatever is specified in package.json
       # for the script test
-    - run: npm test
+    - run: npm load-test-basic
